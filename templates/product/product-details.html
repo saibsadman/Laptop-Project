@@ -52,7 +52,7 @@
                         {% if product.in_stock %}
                         <form action="{% url 'add-to-cart' product.id %}" method="POST">
                             {% csrf_token %}
-                            <button style="cursor: pointer;" type="submit" class="primary-btn pc-btn">Add to cart</button>
+                            <button style="cursor: pointer; background-color: #4b33ff; color: white; margin-top: 20px;" type="submit" class="primary-btn pc-btn">Add to cart</button>
                         </form>
                         {% endif %}
                     </div>
